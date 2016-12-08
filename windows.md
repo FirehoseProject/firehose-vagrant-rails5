@@ -24,7 +24,7 @@ Download and unzip the following file: [vagrant.zip](tools/vagrant.zip) to your 
 Step 3: Install the tools
 -------
 
-* Go to the [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads), click the link to Download "VirtualBox for Windows hosts  x86/amd64".  Find the VirutalBox.exe file you just downloaded in your internet browser.  Right-click the VirutalBox.exe, press "Run as Administrator", and follow the instructions (you're clicking next most of the time). If you are on Windows 10 or upgrade to Windows 10, make sure to have the latest VirutalBox version.
+* Go to the [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads), click the link to Download "Windows hosts".  Find the VirutalBox.exe file you just downloaded in your internet browser.  Right-click the VirutalBox.exe, press "Run as Administrator", and follow the instructions (you're clicking next most of the time). If you are on Windows 10 or upgrade to Windows 10, make sure to have the latest VirutalBox version.
 * Go to the [Sublime Text Editor Website](http://sublimetext.com/) and click "Download for Windows".  Once the program downloads, find the file in Windows Explorer and right click the file, click "Run as Administrator" and follow the instructions (you're clicking next most of the time)
 * Download [Putty SSH Client](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe), copy the putty.exe file onto your desktop (that way you can start things up quickly)
 * Go to the [Vagrant Download Page](http://www.vagrantup.com/downloads.html), click Find the Windows section and click "Universal (32 and 64-bit)".  Run the file you downloaded and follow the instructions (you're clicking next most of the time)
