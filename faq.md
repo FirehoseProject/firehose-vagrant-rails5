@@ -14,8 +14,8 @@ Installation Directory must be on a local hard drive
 **Force the installer to run with administrator privileges.
 To do so:**
 
-* Locate the `Vagrant_1.4.3.msi` installer file that you downloaded.
-* While holding down the Shift key on the keyboard, right-click on the `Vagrant_1.4.3.msi`, then choose Copy As Path.
+* Locate the `Vagrant_X.X.X.msi` installer file that you downloaded (X.X.X is the latest version number).
+* While holding down the Shift key on the keyboard, right-click on the `Vagrant_X.X.X.msi`, then choose Copy As Path.
 * Go to Start > All Programs > Accessories.
 * Right-click on Command Prompt and choose Run As Administrator. This should open a command prompt window, labeled "Administrator:".
 * In the Command Prompt window, type msiexec /i (you need to enter a single space after "/i").

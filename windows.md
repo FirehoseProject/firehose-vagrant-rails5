@@ -135,7 +135,7 @@ Step 7: Test
 cd /vagrant/src/firehose-test-app
 ```
 ```
-rails s
+rails s -b 0.0.0.0
 ```
 
 
@@ -147,7 +147,7 @@ Step 8: Stop your rails server
 
 Now return to a window where you can enter commands in web development terminal window.  
 
-**Find your web development terminal where you ran the `rails server` command and hold CTRL+C.**
+**Find your web development terminal where you ran the `rails server` (rails s) command and hold CTRL+C.**
 
 This stops the webpage from working, but will allow you to enter new commands.
 

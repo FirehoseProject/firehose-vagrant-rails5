@@ -7,7 +7,7 @@ IMPORTANT: READ THIS!
 ---------
 
 If you're running Parallels, VirtualBox, or VMWare to run Windows (for example to run Microsoft
-Word inside Windows on your Mac) make sure to close Parrellels before going through these steps.  Parallels does not
+Word inside Windows on your Mac) make sure to close Parallels before going through these steps.  Parallels does not
 play nicely with Vagrant.
 
 
@@ -34,7 +34,7 @@ Step 3: Install the tools
 -------
 
 
-* Go to the [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads), click the link to Download "VirtualBox for OS X hosts".  Open the dmg file that downloads, then double click on VirtualBox.pkg that pops up and follow the instructions (you're clicking continue most of the time).  Once you go through that step close out the "VirtualBox" window.
+* Go to the [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads), click the link to Download "OS X hosts".  Open the dmg file that downloads, then double click on VirtualBox.pkg that pops up and follow the instructions (you're clicking continue most of the time).  Once you go through that step close out the "VirtualBox" window.
 * Go to the [Sublime Text Editor Website](http://sublimetext.com/) and click "Download for Mac".  Open the file and [drag the Sublime Text program into the Applications folder](http://i.imgur.com/pgjF3WL.png), then launch the program by going into your _Launch Pad_ and finding "Sublime Text".  (Note: This may say that this is from an [unidentified developer and is unallowed, to continue](http://i.imgur.com/FNTYmyL.png) if this happens open Launch Pad > System Preferences > Security & Privacy and click [open Anyway](http://i.imgur.com/XPVpfRf.png). )  It will probably tell you ["Sublime Text" is an application downloaded from the internet. Are you sure you want to open it?](http://i.imgur.com/bjtmqkw.png)  Press **Open**.  This will launch the Sublime Text editor, and you'll be good.  If you need more help check out [this Sublime Text install video](https://vimeo.com/88292868) we made.
 * Go to the [Vagrant Download Page](http://www.vagrantup.com/downloads.html), click Find the Mac OS X section and click "Universal (32 and 64-bit)".  Run the file you downloaded and follow the instructions (you're clicking next most of the time)
 * Restart your computer if you're prompted to.
@@ -64,23 +64,13 @@ Step 5: Log into your dev environment
 
 To log into your web-dev environment follow the following steps:
 
-__First__:  double click the vagrant folder on your desktop:
+__First__:  After `vagrant up` finishes, in the terminal type:
 
-![Vagrant folder](http://i.imgur.com/xX2q3qq.png)
+```
+vagrant ssh
+```
 
-
-__Second__: the finder window opens double click the `Launch Mac Web Dev
-   Environment`.
-
-![vagrant-folder](http://i.imgur.com/VMgxYn6.png)
-
-__Third__: you may get prompted if you want to continue.  If this comes up for you, type `yes` and press enter.  If this does not come up, that's ok too.
-
-![continue](http://i.imgur.com/gR34qy2.png)
-
-__Fourth__: You may be asked for the vagrant@127.0.0.1's password. If so, the password is `vagrant`.
-
-__Fifth__: Then you'll be prompted with a terminal window inside your web
+__Second__: Then you'll be prompted with a terminal window inside your web
 development environment that looks like this:
 
 ![web-dev-environment](http://i.imgur.com/UdZvZTj.png)
@@ -152,7 +142,7 @@ Step 7: Test
 cd /vagrant/src/firehose-test-app
 ```
 ```
-rails s
+rails s -b 0.0.0.0
 ```
 
 
@@ -164,7 +154,7 @@ Step 8: Stop your rails server
 
 Now return to a window where you can enter commands in web development terminal window.  
 
-**Find your web development terminal where you ran the `rails server` command and hold CTRL+C.**
+**Find your web development terminal where you ran the `rails server` (rails s) command and hold CTRL+C.**
 
 This stops the webpage from working, but will allow you to enter new commands.
 

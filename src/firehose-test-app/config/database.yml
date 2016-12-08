@@ -20,6 +20,9 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
 
 development:
   <<: *default
@@ -81,5 +84,5 @@ test:
 production:
   <<: *default
   database: firehose-test-app_production
-  username: firehose-test-app
-  password: <%= ENV['FIREHOSE-TEST-APP_DATABASE_PASSWORD'] %>
+  # username: firehose-test-app
+  # password: <%= ENV['FIREHOSE-TEST-APP_DATABASE_PASSWORD'] %>
