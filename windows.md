@@ -26,7 +26,7 @@ Step 3: Install the tools
 
 * Go to the [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads), click the link to Download "Windows hosts".  Find the VirutalBox.exe file you just downloaded in your internet browser.  Right-click the VirutalBox.exe, press "Run as Administrator", and follow the instructions (you're clicking next most of the time). If you are on Windows 10 or upgrade to Windows 10, make sure to have the latest VirutalBox version.
 * Go to the [Sublime Text Editor Website](http://sublimetext.com/) and click "Download for Windows".  Once the program downloads, find the file in Windows Explorer and right click the file, click "Run as Administrator" and follow the instructions (you're clicking next most of the time)
-* Download [Putty SSH Client](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe), copy the putty.exe file onto your desktop (that way you can start things up quickly)
+* Download [Putty SSH Client](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), copy the putty.exe file onto your desktop (that way you can start things up quickly)
 * Go to the [Vagrant Download Page](http://www.vagrantup.com/downloads.html), click Find the Windows section and click "Universal (32 and 64-bit)".  Run the file you downloaded and follow the instructions (you're clicking next most of the time)
 * Restart your computer if you're prompted to.
 
@@ -39,7 +39,7 @@ Open up the **Windows Command Prompt**: click the **Start** button ![Picture of 
 A command prompt will come up, and then run the following two commands:
 
 ```
-cd Desktop\vagrant
+cd Desktop\firehose-vagrant
 ```
 
 Then type this command.  It will take a few moments to complete (it needs to download a very large file):
@@ -132,10 +132,10 @@ Step 7: Test
  In the putty window run this, _important note: after you run `rails s` it won't give you the prompt to continue to enter commands. This is by design, so move onto the next step even if it looks like it's just hanging_:
 
 ```
-cd /vagrant/src/firehose-test-app
+cd /firehose-vagrant/src/firehose-test-app
 ```
 ```
-rails s -b 0.0.0.0
+rails s -b 0.0.0.0 -p 3000
 ```
 
 
