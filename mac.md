@@ -48,7 +48,7 @@ Open up the **Terminal Window**: Hold Command+Spacebar, in the Spotlight type 'T
 A terminal window will come up, and then run the following two commands:
 
 ```
-cd ~/Desktop/vagrant
+cd ~/Desktop/firehose-vagrant
 ```
 
 Then type this command.  It will need to download a large file, so it will take a few moments to complete:
@@ -139,10 +139,10 @@ Step 7: Test
  In the web development terminal window,  where it says `[Web Dev]` in blue, run this, _important note: after you run `rails s` it won't give you the prompt to continue to enter commands. This is by design, so move onto the next step even if it looks like it's just hanging_:
 
 ```
-cd /vagrant/src/firehose-test-app
+cd /firehose-vagrant/src/firehose-test-app
 ```
 ```
-rails s -b 0.0.0.0
+rails s -b 0.0.0.0 -p 3000
 ```
 
 
