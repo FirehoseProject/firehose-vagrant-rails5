@@ -6,8 +6,8 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure(2) do |config|
-  # config.ssh.username = 'vagrant'
-  # config.ssh.password = 'vagrant'
+  config.ssh.username = 'vagrant'
+  config.ssh.password = 'vagrant'
   # config.ssh.insert_key = 'true'
 
   # The most common configuration options are documented and commented below.
@@ -54,7 +54,7 @@ Vagrant.configure(2) do |config|
   #
   config.vm.provider "virtualbox" do |vb|
     #   # Display the VirtualBox GUI when booting the machine
-    #   vb.gui = true
+      # vb.gui = true
     #
     #   # Customize the amount of memory on the VM:
     vb.memory = "1024"
