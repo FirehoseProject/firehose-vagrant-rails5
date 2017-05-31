@@ -28,7 +28,7 @@ Then go to [Heroku.com](http://Heroku.com) and create an account there as well.
 Step 2:  Get the files for your development environment
 -----------
 
-Download and unzip the following file: [vagrant.zip](https://github.com/FirehoseProject/firehose-vagrant-rails5/raw/master/tools/firehose-vagrant.zip?raw=true) to your __Desktop__. Unzip the file, it will create a folder called `vagrant` on your Desktop.  This is where all your web development environment will live.
+Download and unzip the following file: [vagrant.zip](https://github.com/FirehoseProject/firehose-vagrant-rails5/raw/master/tools/vagrant.zip?raw=true) to your __Desktop__. Unzip the file, it will create a folder called `vagrant` on your Desktop.  This is where all your web development environment will live.
 
 Step 3: Install the tools
 -------
@@ -48,7 +48,7 @@ Open up the **Terminal Window**: Hold Command+Spacebar, in the Spotlight type 'T
 A terminal window will come up, and then run the following two commands:
 
 ```
-cd ~/Desktop/firehose-vagrant
+cd ~/Desktop/vagrant
 ```
 
 Then type this command.  It will need to download a large file, so it will take a few moments to complete:
@@ -139,7 +139,7 @@ Step 7: Test
  In the web development terminal window,  where it says `[Web Dev]` in blue, run this, _important note: after you run `rails s` it won't give you the prompt to continue to enter commands. This is by design, so move onto the next step even if it looks like it's just hanging_:
 
 ```
-cd /firehose-vagrant/src/firehose-test-app
+cd /vagrant/src/firehose-test-app
 ```
 ```
 rails s -b 0.0.0.0 -p 3000

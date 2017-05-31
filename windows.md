@@ -39,7 +39,7 @@ Open up the **Windows Command Prompt**: click the **Start** button ![Picture of 
 A command prompt will come up, and then run the following two commands:
 
 ```
-cd Desktop\firehose-vagrant
+cd Desktop\vagrant
 ```
 
 Then type this command.  It will take a few moments to complete (it needs to download a very large file):
@@ -132,7 +132,7 @@ Step 7: Test
  In the putty window run this, _important note: after you run `rails s` it won't give you the prompt to continue to enter commands. This is by design, so move onto the next step even if it looks like it's just hanging_:
 
 ```
-cd /firehose-vagrant/src/firehose-test-app
+cd /vagrant/src/firehose-test-app
 ```
 ```
 rails s -b 0.0.0.0 -p 3000
