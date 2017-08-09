@@ -89,12 +89,23 @@ ssh-add ~/.ssh/id_rsa
 ```
 
 #### Configure Heroku with SSH Keys
+First we need to update the `heroku-cli` with the following command:
 
-This will prompt you for your heroku username and password.  Enter that here.
+```
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
+```
+
+Next, we will need to log into our heroku account in this coding environment.
+This will prompt you for your Heroku email and password.
+Run the following command to start to initiate the login process,
+then enter your email and password when you're prompted for it:
 
 ```
 heroku login
 ```
+Finally, we need to add our ssh key to our heroku account:
+
 ```
 heroku keys:add
 ```
