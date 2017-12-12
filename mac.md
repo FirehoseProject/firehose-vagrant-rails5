@@ -57,7 +57,7 @@ Then type this command.  It will need to download a large file, so it will take 
 vagrant up
 ```
 
-**NOTE:** If this comes back with an error message telling you to run `vagrant init` DO NOT DO THAT.  See this post [here](http://www.thefirehoseproject.com/comments/48) for details about how to fix this error message.
+**NOTE:** If this comes back with an error message telling you to run `vagrant init` DO NOT DO THAT.  See this post [here](https://workspace.thefirehoseproject.com/comments/48) for details about how to fix this error message.
 
 Step 5: Log into your dev environment
 -----------
@@ -163,7 +163,7 @@ Open a web browser on your computer and go to: [http://127.0.0.1:3030](http://12
 Step 8: Stop your rails server
 -------------
 
-Now return to a window where you can enter commands in web development terminal window.  
+Now return to a window where you can enter commands in web development terminal window.
 
 **Find your web development terminal where you ran the `rails server` (rails s) command and hold CTRL+C.**
 
@@ -176,4 +176,4 @@ Step 9: Know your web development environment
 
 Knowing and understanding how to connect to your web development environment when you want to start coding is pretty important.
 
-**Go to our [FirehoseProject Vagrant Intro Guide](http://www.thefirehoseproject.com/cheat-sheets/vagrant-intro) and get comfortable with your web development environment.**
+**Go to our [FirehoseProject Vagrant Intro Guide](http://workspace.thefirehoseproject.com/cheat-sheets/vagrant-intro) and get comfortable with your web development environment.**
